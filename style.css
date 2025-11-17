@@ -34,10 +34,22 @@ nav{
     border-radius: 15px;
     padding: 1rem;
     cursor: pointer;    
+    transition: all 0.5s ease;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-family: sans-serif;
+    }
     .link{
         float: right;
         font-size: 40px;
     }
+}
+
+.card:hover{
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 1px 2px 9px red;
 }
 
 .fade-in{
@@ -58,6 +70,7 @@ nav{
 @media screen and (max-width: 950px) {
     nav{
         width: 80vw;
+        min-height: 10vh;
     }
     .card{
         height: auto;
