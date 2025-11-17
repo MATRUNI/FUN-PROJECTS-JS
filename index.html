@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script> const socket = new WebSocket("ws://" + location.host); socket.onmessage = (e) => { if (e.data === "reload") { location.reload(); } }; </script>
+</head>
+<body>
+    <nav>
+        <div id="name">Himanshu Yadav</div>
+    </nav>
+    <div id="container">
+        <div class="card fade-in">
+            <h2>Colour Changer</h2>
+            <ul>
+                <li>Developed an interactive UI using semantic HTML and custom CSS, allowing users to change the webpage background by clicking on colour tiles.</li>
+                <li>Implemented dynamic theme switching using JavaScript DOM manipulation and class-based styling for clean, scalable behaviour.</li>
+                <li>Created a responsive and user-friendly layout, ensuring smooth interaction across devices and screen sizes.</li>
+                <li>Added a reset feature (“Back To Black”) using event listeners to revert the page to its default design.</li>
+                <li>Structured the project with separation of concerns, keeping HTML, CSS, and JavaScript in dedicated files for clarity and maintainability.</li>
+                <li>Planned enhancements, such as custom colour pickers, transitions/animations, theme persistence using local storage, and improved UI styling.</li>
+            </ul>
+            <div id="1">
+                <i class="fa-brands fa-square-github link"></i>
+            </div>
+        </div>
+        <div class="card fade-in">
+            <h2>BMI Calculator</h2>
+            <ul>
+                <li>Built a functional BMI calculator that allows users to input height and weight to instantly receive their BMI classification.</li>
+                <li>Implemented real-time calculations using JavaScript, providing immediate feedback without page reloads.</li>
+                <li>Displayed output clearly, including BMI value and corresponding health category (e.g., Underweight, Normal, Overweight, Obese).</li>
+                <li>Designed a clean and intuitive UI, ensuring the tool is simple to use for all users.</li>
+                <li>Used modular and readable JavaScript, making it easy to improve or expand in the future.</li>
+                <li>Planned enhancements, such as input error highlighting, animations, metric/imperial unit toggle, and storing last-used values.</li>
+            </ul>
+            <div id="2">
+                <i class="fa-brands fa-square-github link"></i>
+            </div>
+        </div>
+        <div class="card fade-in">
+            <h2>Dictionary</h2>
+            <ul>
+                <li>Created a functional dictionary application that fetches real-time word definitions and synonyms using the DictionaryAPI.dev public API.</li>
+                <li>Implemented asynchronous data fetching with the Fetch API, handling JSON responses to display dynamic content without page reloads.</li>
+                <li>Displayed multiple definitions and synonyms in an organized, readable list format generated through JavaScript DOM manipulation.</li>
+                <li>Designed a clean, minimal UI with separate sections for definitions and synonyms to improve clarity and user experience.</li>
+                <li>Built an easily extendable codebase, allowing future features such as pronunciation audio, example sentences, part-of-speech filters, and a “search” button.</li>
+                <li>Practiced real-world API integration, strengthening understanding of promises, loops, and object traversal.</li>
+            </ul>
+            <div id="3">
+                <i class="fa-brands fa-square-github link"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
