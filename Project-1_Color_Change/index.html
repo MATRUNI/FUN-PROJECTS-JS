@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Changer</title>
+    <link rel="stylesheet" href="style.css">
+     <script> const socket = new WebSocket("ws://" + location.host); socket.onmessage = (e) => { if (e.data === "reload") { location.reload(); } }; </script>
+</head>
+<body>
+    <nav>
+        <div>Back To Home</div>
+    </nav>
+    <div id="container">
+        <p>Change background colour by clicking them</p>
+        <div id="colors">
+            <div class="color1" id="c1"></div>
+            <div class="color2" id="c2"></div>
+            <div class="color3" id="c3"></div>
+            <div class="color4" id="c4"></div>
+        </div>
+    </div>
+
+    <div id="btnContainer"><button id="btn">Back To Black</button></div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
