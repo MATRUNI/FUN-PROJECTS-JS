@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(160, 255, 255);
+    font-family: sans-serif;
+}
+#input{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    height: 3rem;
+    width: 15rem;
+    font-size: larger;
+    padding: 1rem 1rem 0 1rem;
+    border: none;
+    text-align: center;
+    outline: none;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgb(160, 255, 255), whitesmoke);
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 90vw;
+    justify-self: center;
+}
+#dif, #syn{
+    min-height: 40vh;
+    min-width: 40vw;
+    background: linear-gradient(325deg, rgb(160, 255, 255), rgba(94, 105, 201, 0.904));
+    overflow-y: auto;
+    padding: 2rem;
+    color: whitesmoke;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:450px){
+    #container{
+        flex-direction: column;
+        justify-self: center;
+    }
+}
