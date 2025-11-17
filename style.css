@@ -4,7 +4,7 @@
 
 body{
     height: 100vh;
-    background-color: rgb(111, 114, 113);
+    background-color: rgb(104, 47, 168);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,7 +15,7 @@ body{
 nav{
     height: 5rem;
     width: 60vw;
-    background-color: #3b3b3b;
+    background-color: rgb(47, 26, 107);
     color: whitesmoke;
     border-radius: 0 20px;
     padding: 1rem;
@@ -29,10 +29,11 @@ nav{
 .card{
     height: auto;
     width: 60vw;
-    background-color: rgb(245, 245, 245);
-    border: 2px double rgb(255, 255, 255);
+    background-color: rgb(47, 26, 107);
+    border: 2px double rgb(12, 12, 12);
     border-radius: 15px;
     padding: 1rem;
+    color: whitesmoke;
     cursor: pointer;    
     transition: all 0.5s ease;
     ul{
@@ -49,7 +50,7 @@ nav{
 
 .card:hover{
     transform: translateY(-5px) scale(1.01);
-    box-shadow: 1px 2px 9px red;
+    box-shadow: 1px 2px 9px rgb(134, 134, 134);
 }
 
 .fade-in{
