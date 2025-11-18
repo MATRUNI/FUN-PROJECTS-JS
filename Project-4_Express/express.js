@@ -19,4 +19,5 @@ app.post("/post", (req, res)=>{
 
 app.listen(3000, ()=>{
     console.log("Server RUnning on port: 3000");
+    console.log("http://localhost:3000");
 });
