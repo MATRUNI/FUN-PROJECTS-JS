@@ -17,7 +17,7 @@ Making these Projects for fun and understanding the DOM manipulation with JS
 - Uses DictionaryAPI
 
 
-In project 4, if you want to clone it, then please remember to install the dependencies.
--npm
-    -express
-    -cors
+# In project 4, if you want to clone it, then please remember to install the dependencies.
+- npm
+    - express
+    - cors
