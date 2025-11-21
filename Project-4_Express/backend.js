@@ -21,22 +21,32 @@ app.get("/home", (req, res)=>
 });
 
 app.post("", (req, res)=>{
-    console.log("BODY: ", req.body);
-    pwd+="/"+req.body.body;
-    console.log(pwd)
-    res.json({
-        message: "Accepted",
-        data: req.body
-    });
-})
+    if(req.body.forward)
+    {
+        // console.log("BODY: ", req.body);
+        pwd+="/"+req.body.body;
+        // console.log(pwd)
+        res.json({
+            message: "Accepted",
+            data: req.body
+        });
+    }
+    else
+    {
+        pwd=pwd.replace("/"+req.body.body, "");
+        console.log(pwd);
+        res.json({
+            message: "Accepted",
+            data: req.body
+        });
+    }
+});
 
 
 app.get("",(req, res)=>{
     fs.readdir(pwd, (err, files)=>{
         if(err)
             throw err;
-        // console.log("called function executed!");
-        // console.log(filterDot(files));
         res.json(filterDot(files))
     });
 });
