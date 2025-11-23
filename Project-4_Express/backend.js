@@ -5,11 +5,11 @@ const app=express();
 
 app.use(cors());
 
-const home=require("os").homedir();
+const home = require("os").homedir();
 
 const fs=require("fs");
 
-app.get("/home", (req, res)=>
+app.get("/home", (req, res) =>
 {
     fs.readdir(home, (err, fileNames)=>
     {
